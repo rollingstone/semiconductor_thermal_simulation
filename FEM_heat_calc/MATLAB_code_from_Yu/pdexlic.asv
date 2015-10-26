@@ -1,0 +1,3 @@
+% L'etat initial(20 degree partout)
+function u0 = pdexlic(x)
+u0 = 20;

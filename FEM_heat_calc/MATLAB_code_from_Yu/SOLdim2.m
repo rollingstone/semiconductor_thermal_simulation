@@ -1,0 +1,13 @@
+D = 1;
+u_xy0 = inline('0','x','y');
+u_xyt = inline('100','x','y','t');
+L = [0,2,0,2];
+T = 10;
+Mx = 80;
+My = 80;
+N = 20;
+[u,x,y,t] = sjy(D, L, T, u_xy0, u_xyt, Mx, My, N);
+mesh(x,y,u);
+xlabel('x');
+ylabel('y');
+zlabel('u');
